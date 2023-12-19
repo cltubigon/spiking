@@ -3,19 +3,19 @@ import React from "react"
 import { Button } from "@chakra-ui/react"
 import { PiTarget } from "react-icons/pi"
 import { AiOutlineSchedule } from "react-icons/ai"
+import { useDispatch, useSelector } from "react-redux"
+import { SET_TEST_ACTION } from "../../store/actions/testAction"
 
 const Home = () => {
+  const state = useSelector(state => state.test)
+  console.log({ state })
   return (
     <Flex flexDirection={"column"}>
       <Flex
-        // bgImage={'url("./assets/mapwithlocation.webp")'}
-        // bgRepeat={'no-repeat'}
-        // bgPosition={'bottom right'}
         w={"100%"}
         h={"100vh"}
         flexDirection={"column"}
         alignItems={"center"}
-        // bgColor={"blue.50"}
         position={'relative'}
       >
         <Image src="./assets/mapwithlocation.webp" position={'absolute'} w={'55%'} bottom={0} right={0}  />
@@ -67,8 +67,6 @@ const Home = () => {
             </Button>
             <Button
               colorScheme="twitter"
-              // bgColor={"blue.300"}
-              // _hover={{ bgColor: "blue.300" }}
               color={"white"}
               leftIcon={<AiOutlineSchedule size={24} />}
               px={10}
