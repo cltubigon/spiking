@@ -37,7 +37,7 @@ const Home = () => {
             pr={"350px"}
             letterSpacing={"-1.5px"}
           >
-            Dipolog's Premier Solution for All Your Boilerplate!
+            Dipolog's Premier Solution for All Your Boilerplatess!
           </Heading>
           <Divider
             w={"10%"}
