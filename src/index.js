@@ -16,7 +16,7 @@ root.render(
   <React.StrictMode>
     <Provider store={guestPersistedStore}>
       <ChakraProvider theme={customTheme}>
-        <PersistGate loading={<div>Loading..</div>} persistor={guestPersistor}>
+        <PersistGate loading={<div>Loading...</div>} persistor={guestPersistor}>
           <App />
         </PersistGate>
       </ChakraProvider>
